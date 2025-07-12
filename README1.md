@@ -1,54 +1,74 @@
-📈 Stock Price Predictor with News Sentiment Analysis 📰
+## 📈 Stock Price Predictor with News Sentiment Analysis 📰
+
 This project builds a machine learning-based stock price prediction model that incorporates both historical price data and real-time news sentiment analysis to improve forecast accuracy. It combines quantitative indicators (moving averages, past prices) with qualitative market sentiment extracted from news headlines.
 
-🔍 Project Overview
+## 🔍 Project Overview
+
 Stock market prices are influenced by a mix of technical trends and investor sentiment. While traditional price prediction relies on historical numerical data, this project enhances predictive performance by integrating news sentiment, using Natural Language Processing (NLP) and Machine Learning (ML) techniques.
 
-🎯 Objectives
-Collect and process historical stock price data
+## 🎯 Objectives
 
-Scrape financial news headlines
+* Collect and process historical stock price data
 
-Perform sentiment analysis using VADER (Valence Aware Dictionary and sEntiment Reasoner)
+* Scrape financial news headlines
 
-Merge sentiment scores with price data
+* Perform sentiment analysis using VADER (Valence Aware Dictionary and sEntiment Reasoner)
 
-Train ML models (e.g., Linear Regression, XGBoost) for prediction
+* Merge sentiment scores with price data
 
-Visualize actual vs. predicted prices
+* Train ML models (e.g., Linear Regression, XGBoost) for prediction
 
-🛠️ Tools & Technologies
+* Visualize actual vs. predicted prices
+
+## 🛠️ Tools & Technologies
+
 Category	Tools/Libraries
+
 Programming Language	Python
+
 Data Sources	Yahoo Finance, NewsAPI
+
 Data Handling	pandas, numpy
+
 Visualization	matplotlib, seaborn
+
 Sentiment Analysis	nltk (VADER), optional: FinBERT (Hugging Face)
+
 Machine Learning	scikit-learn, xgboost, keras (optional for LSTM)
+
 IDE / Platform	Google Colab / Jupyter Notebook
 
-📂 Project Structure
+## 📂 Project Structure
 
 ├── stock_price_predictor/
+
 │   ├── stock_data_fetch.py       # Fetch stock data using yfinance
+
 │   ├── news_sentiment.py         # Fetch and analyze news sentiment
+
 │   ├── merge_features.py         # Combine technical and sentiment features
+
 │   ├── model_training.py         # ML model training and evaluation
+
 │   ├── prediction_plot.py        # Plot predicted vs actual prices
+
 │   ├── README.md                 # Project documentation
+
 │   └── requirements.txt          # Python dependencies
 
 
-📊 Features
-📉 Stock Data Collection: Automatically fetches OHLC (Open, High, Low, Close) stock data using yfinance.
+## 📊 Features
 
-📰 News Scraping: Uses NewsAPI to gather headlines relevant to the selected stock ticker.
+* 📉 Stock Data Collection: Automatically fetches OHLC (Open, High, Low, Close) stock data using yfinance.
 
-🧠 Sentiment Analysis: VADER assigns compound sentiment scores (−1 to +1) to each headline.
+* 📰 News Scraping: Uses NewsAPI to gather headlines relevant to the selected stock ticker.
 
-🔄 Feature Merging: Combines sentiment and technical indicators like moving averages.
+* 🧠 Sentiment Analysis: VADER assigns compound sentiment scores (−1 to +1) to each headline.
 
-🤖 Modeling:
+* 🔄 Feature Merging: Combines sentiment and technical indicators like moving averages.
+
+
+## 🤖 Modeling:
 
 Linear Regression (Baseline)
 
@@ -59,7 +79,7 @@ Optional: LSTM for time series forecasting
 📈 Visualization: Shows actual vs predicted stock prices with clear time-series plots.
 
 
-🚀 How to Run
+## 🚀 How to Run
 Install dependencies (recommended in virtualenv or Colab):
 
 `pip install -r requirements.txt`
@@ -74,7 +94,7 @@ Fetch news headlines using NewsAPI:
 Sign up at newsapi.org and get your API key.
 
 
-# Replace with your own API key
+Replace with your own API key
 `url = f"https://newsapi.org/v2/everything?q=AAPL&from=2023-01-01&apiKey=YOUR_API_KEY"`
 
 Run sentiment analysis:
@@ -88,7 +108,8 @@ model.fit(X_train, y_train)`
 
 Evaluate and visualize predictions.
 
-✅ Future Improvements
+## ✅ Future Improvements
+
 * Integrate FinBERT for domain-specific sentiment (finance)
 
 * Use Twitter or Reddit for real-time social sentiment
@@ -99,8 +120,8 @@ Evaluate and visualize predictions.
 
 * Fine-tune LSTM model for long-term forecasting
 
-🤝 Contributors
+## 🤝 Contributors
 Your Name – Itika Khandelwal
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License – see the LICENSE file for details.
